@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My First Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #aaa;
+            max-width: 600px;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <h1>Hello, I'm Raji 👋</h1>
+
+        <p>
+            Welcome to my first website. 
+            I'm learning how to build things on the web.
+        </p>
+
+        <button onclick="showMessage()">
+            Click Me
+        </button>
+    </section>
+
+    <script>
+        function showMessage() {
+            alert("You just interacted with my website! 🚀");
+        }
+    </script>
+
+</body>
+</html>
